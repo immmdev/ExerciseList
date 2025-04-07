@@ -22,6 +22,7 @@ export const workoutsReducer = (state, action) => {
 }
 
 export const WorkoutsContextProvider = ({ children }) => {
+    const url="https://exerciselist-1-backend.onrender.com"
     const [state, dispatch] = useReducer(workoutsReducer, {
         workouts: null
     })
